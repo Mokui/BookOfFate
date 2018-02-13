@@ -20,6 +20,18 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->database();
 		$this->load->view('home');
+
+		$query = $this->db->query('SELECT * FROM g1_bookoffate.Individu');
+
+		foreach ($query->result() as $row)
+		{
+				echo $row->type;
+				echo $row->name;
+				echo $row->level;
+		}
+
+		echo 'Total Results: ' . $query->num_rows();
 	}
 }
