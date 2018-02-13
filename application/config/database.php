@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => 'vps353523.ovh.net',
+	'username' => 'group1',
+	'password' => 'XywqCjPQ4RQJdeFAMQDqzhua',
+	'database' => 'g1_bookoffate',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
