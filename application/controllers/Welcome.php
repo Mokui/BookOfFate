@@ -28,9 +28,11 @@ class Welcome extends CI_Controller {
 		foreach ($query->result() as $row)
 		{
 				echo "====================";
-				echo $row->type+"\n";
-				echo $row->name+"\n";
-				echo $row->level+"\n";
+				echo $row->type;
+				echo "\n";
+				echo $row->name;
+				echo "\n";
+				echo $row->level
 		}
 
 		echo 'Total Results: ' . $query->num_rows();
