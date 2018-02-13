@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 
 		foreach ($query->result() as $row)
 		{
-				echo "====================";
+				echo "\n ==================== \n";
 				echo $row->type;
 				echo "\n";
 				echo $row->name;
