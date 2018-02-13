@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
 				echo "\n";
 				echo $row->name;
 				echo "\n";
-				echo $row->level
+				echo $row->level;
 		}
 
 		echo 'Total Results: ' . $query->num_rows();
