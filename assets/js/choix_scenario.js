@@ -1,5 +1,6 @@
 $(function()
 {
+  $("#form-pseudo button").attr("disabled", "disabled");
   charger_liste_scenario();
 })
 
@@ -25,7 +26,7 @@ function afficher_liste_scenario(liste)
 
   $.each(liste, function(id, scenario)
   {
-    html += "<li value='"+liste[id]['idScenario']+"' onclick='charger_details_scenario(this)'>"+liste[id]['nomScenario']+"</li>";
+    html += "<li class='list-group-item list-group-item-action list-group-item-warning mt-1' value='"+liste[id]['idScenario']+"' onclick='charger_details_scenario(this)'>"+liste[id]['nomScenario']+"</li>";
   });
 
   $("#liste-scenario > ul").html(html);
@@ -57,5 +58,6 @@ function charger_details_scenario(scenario)
 function afficher_details_scenario(scenario)
 {
   $("#description-scenario").html(scenario['descriptionScenario']);
-  $("#image-scenario").html('<img style="width:70%;" src="'+scenario['imageScenario']+'" alt="image scenario"/>');
+  $("#image-scenario").html('<img src="'+scenario['imageScenario']+'" alt="image scenario"/>');
+  $("#form-pseudo button").removeAttr("disabled");
 }
