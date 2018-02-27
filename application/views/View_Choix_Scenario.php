@@ -22,23 +22,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-6">
 
 					<div id="liste-scenario">
-						<ul>
+						<ul class="list-group">
 							Chargement en cours ...
 						</ul>
 					</div>
 
-					<div id="form-pseudo">
-						<!--<form action='index.php/Controller_Choix_Scenario/charger_page_scenario' method="POST">-->
-						<form method="POST">
-							<input type="text" name="pseudo" placeholder="Votre pseudo">
-							<a href="<?php echo base_url();?>index.php/Welcome/index"><button type="button">Valider</button></a>
+					<div id="form-pseudo" class="mt-4">
+						<form class="form-group form-inline">
+							<input type="text" class="form-control mr-2" name="pseudo" placeholder="Votre pseudo">
+							<a href="<?php echo base_url();?>index.php/Welcome/index">
+								<button type="button" class="btn btn-dark">Commencer l'aventure !</button>
+							</a>
 						</form>
 					</div>
 				</div>
 
 				<div class="col-md-6">
 					<div id="image-scenario"></div>
-					<div id="description-scenario"></div>
+					<div id="description-scenario" class="mt-2 mb-2 pl-2"></div>
 				</div>
 			</div>
 		</div>
