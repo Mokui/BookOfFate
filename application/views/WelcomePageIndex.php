@@ -7,15 +7,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <title>BookOfFate</title>
         <meta charset="utf-8">
         <meta name="description" content="165c. uniques">
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>" />
 </head>
 
 
 <header><!-- Entête de la zone considérée -->
         <nav id="MenuNav">
             <li class="listeNav"><h1 id="Titre">BOOK OF FATE</h1></li>
-            <li class="listeNav"><a title="regle de book of fate" href="index.php/Controller_Rules/index">Règles de BookOfFate</a></li>
-            <li class="listeNav"><a title="Jouer" href="index.php/Controller_Choix_Scenario/index">Jouer</a></li>
+            <li class="listeNav"><a title="regle de book of fate" href="<?php echo base_url();?>index.php/Controller_Rules/index">Règles de BookOfFate</a></li>
+            <li class="listeNav"><a title="Jouer" href="<?php echo base_url();?>index.php/Controller_Choix_Scenario/index">Jouer</a></li>
         </nav>
 
 </header>
