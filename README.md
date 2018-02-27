@@ -27,6 +27,7 @@ Idée : Chaque rôle propose une quête différente au niveau du scénario en pl
 
 
 Vous devez installer une version de PHP supérieure ou égale à 5.6 ainsi qu'une version de CodeIgniter égale ou supérieure à 3.2.0-dev.
+(Pour de plus amples informations allez voir [ici](https://github.com/Mokui/BookOfFate/blob/master/readme.rst) ).
 
 Pour une bonne utilisation du jeu ainsi que pour son bon fonctionnement vous devez utiliser un serveur Apache PHP [Xampp](https://www.apachefriends.org/fr/download.html)
 ou [Wamp](http://www.wampserver.com/en/download-wampserver-64bits/)  (en local).
