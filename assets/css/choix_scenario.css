@@ -90,3 +90,8 @@ li:hover
 {
   cursor : pointer;
 }
+
+#image-scenario img
+{
+  width: 100%;
+}
