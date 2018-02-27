@@ -39,8 +39,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="body">
 		<p><?php echo $descrip ?></p>
 			<ul class="emargeur">
-				<li><?php echo $nextPath0 ?></li>
-				<li><?php echo $nextPath1 ?></li>
+				<?php
+					if(isset($nextPath0)) {
+						?><li><?php echo $nextPath0; ?></li><?php
+					} 
+					if(isset($nextPath1)) {
+						?><li><?php echo $nextPath1; ?></li><?php
+					}
+					if(isset($nextPath2)) {
+						?><li><?php echo $nextPath2; ?></li><?php
+					}
+				?>
 			</ul>
 		</div>
 
