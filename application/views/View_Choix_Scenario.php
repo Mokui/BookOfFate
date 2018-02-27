@@ -7,12 +7,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Book of Fate - Choix scénario</title>
 
 		<!-- JQUERY -->
-		<script src="assets/jquery/jquery-3.3.1.min.js"></script>
+		<script src="<?php echo base_url('assets/jquery/jquery-3.3.1.min.js')?>"></script>
 		<!-- BOOTSTRAP -->
-		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+		<script src="<?php echo base_url('/assets/bootstrap/js/bootstrap.min.js')?>"></script>
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/bootstrap/css/bootstrap.min.css')?>" />
 		<!-- CSS PERSO -->
-		<link rel="stylesheet" type="text/css" href="assets/css/choix_scenario.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/choix_scenario.css')?>" />
 </head>
 <body>
 	<div id="container">
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!--<form action='index.php/Controller_Choix_Scenario/charger_page_scenario' method="POST">-->
 						<form method="POST">
 							<input type="text" name="pseudo" placeholder="Votre pseudo">
-							<input type="submit" value="Valider">
+							<a href="<?php echo base_url();?>index.php/Welcome/index"><button type="button">Valider</button></a>
 						</form>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav id="MenuNav">
             <li class="listeNav"><h1 id="Titre">BOOK OF FATE</h1></li>
             <li class="listeNav"><a title="regle de book of fate" href="lien de la page regle">Règles de BookOfFate</a></li>
-            <li class="listeNav"><a title="Jouer" href="lien de la page choix du scénario">Jouer</a></li>
+            <li class="listeNav"><a title="Jouer" href="index.php/Controller_Choix_Scenario/index">Jouer</a></li>
         </nav>
 
 </header>
