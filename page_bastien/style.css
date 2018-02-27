@@ -1,0 +1,38 @@
+#titre{
+    font-family: fantasy;
+    display: flex;
+}
+#MenuNav{
+    justify-content: center;
+}
+.listeNav{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+a:link{
+    font-family: Arial,sans-serif;
+    font-size: 1.6em;
+    width: 200px;
+    height: 70px;
+    padding-top: 15px; /*permet le centrage vertical*/
+    text-align: center;
+    color: #FEFEFE;
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    border-radius: 8px;
+    /*gere l'ombre du texte et l'enfoncement*/
+    text-shadow: 0px 1px 0px white;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+    /*gere l'ombre des boites*/
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+    0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+body {
+    color:black;
+    background-color:white;
+    background-image:url(backgroundBookV3.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: bottom;
+}
