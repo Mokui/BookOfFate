@@ -41,13 +41,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<ul class="emargeur">
 				<?php
 					if(isset($nextPath0)) {
-						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/<?php $tab0 ?>"> <?php echo $nextPath0; ?> </a></li><?php
+						?><li><a href="<?php echo base_url(); ?>index.php/Welcome/changePage/<?php $tab0 ?>"> <?php echo $nextPath0; ?> </a></li><?php
 					} 
 					if(isset($nextPath1)) {
-						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/<?php $tab1 ?>"> <?php echo $nextPath1; ?> </a></li><?php
+						?><li><a href="<?php echo base_url(); ?>index.php/Welcome/changePage/<?php $tab1 ?>"> <?php echo $nextPath1; ?> </a></li><?php
 					}
 					if(isset($nextPath2)) {
-						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/<?php $tab2 ?>"> <?php echo $nextPath2; ?> </a></li><?php
+						?><li><a href="<?php echo base_url(); ?>index.php/Welcome/changePage/<?php $tab2 ?>"> <?php echo $nextPath2; ?> </a></li><?php
 					}
 				?>
 			</ul>

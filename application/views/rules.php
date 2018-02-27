@@ -29,6 +29,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</p>
 		<p class="footer">Vitesse de chargement: <strong>{elapsed_time}</strong> seconds.</p>
 	</div>
-	<li classe="listeNav"><a title="retour à l'accueil" href="<?php echo base_url();?>index.php/Controller_Accueil/index">Retour</a></li>
+	<li class="listeNav"><a title="retour à l'accueil" href="<?php echo base_url();?>index.php/Controller_Accueil/index">Retour</a></li>
 </body>
 </html>
