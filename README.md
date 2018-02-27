@@ -28,8 +28,8 @@ Idée : Chaque rôle propose une quête différente au niveau du scénario en pl
 
 Vous devez installez une version de PHP supérieure ou égale à 5.6 ainsi qu'une version de CodeIgniter égale ou supérieure à 3.2.0-dev.
 
-Pour une bonne utilisation du jeu ainsi que pour son bon fonctionnement vous devez utiliser un serveur Apache PHP[Xampp] (https://www.apachefriends.org/fr/download.html)
-ou[Wamp] (http://www.wampserver.com/en/download-wampserver-64bits/)  (en local).
+Pour une bonne utilisation du jeu ainsi que pour son bon fonctionnement vous devez utiliser un serveur Apache PHP [Xampp] (https://www.apachefriends.org/fr/download.html)
+ou [Wamp] (http://www.wampserver.com/en/download-wampserver-64bits/)  (en local).
 
 
 ## Utilisation en local
@@ -37,10 +37,10 @@ ou[Wamp] (http://www.wampserver.com/en/download-wampserver-64bits/)  (en local).
 
 Pour pouvoir jouer à ce jeu vous devez tout d'abord :
 
-#### Pour les utilisateur de Wamp :
+##### Pour les utilisateur de Wamp :
 
 
-        Cloner ce dépot dans sa dernière version dans le dossier:
+        -Cloner ce dépot dans sa dernière version dans le dossier:
         > C:/wamp64/www
         ```         
         git clone https://github.com/Mokui/BookOfFate.git
@@ -51,9 +51,9 @@ Pour pouvoir jouer à ce jeu vous devez tout d'abord :
       Vous devez lancer Wamp puis allez dans votre navigateur et taper l'adresse "localhost" ensuite dans l'onglet Vos Projets choissisez "BookOfFate" et le jeu demarre.
       Vous devez aussi ajouter la Base de donnée située [ici](/application/config/bofdatabase.sql).
 
-#### Pour les utilisateur de Xampp :
+##### Pour les utilisateur de Xampp :
 
-        Cloner ce dépot dans sa dernière version dans le dossier :  
+        -Cloner ce dépot dans sa dernière version dans le dossier :  
         > C:/xampp/htdocs
         ```         
         git clone https://github.com/Mokui/BookOfFate.git
