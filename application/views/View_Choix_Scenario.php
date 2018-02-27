@@ -9,10 +9,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- JQUERY -->
 		<script src="<?php echo base_url('assets/jquery/jquery-3.3.1.min.js')?>"></script>
 		<!-- BOOTSTRAP -->
-		<script src="<?php echo base_url('/assets/bootstrap/js/bootstrap.min.js')?>"></script>
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/bootstrap/css/bootstrap.min.css')?>" />
+		<script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>" />
 		<!-- CSS PERSO -->
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/choix_scenario.css')?>" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/choix_scenario.css')?>" />
 </head>
 <body>
 	<div id="container">

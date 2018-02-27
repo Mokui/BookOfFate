@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
     <title>Book of Fate</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/path.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/path.css');?>">
 </head>
 <body>
 	<div id="container">
