@@ -102,13 +102,19 @@ p.footer {
 	color:black;
 }
 
+#body p{
+	font-weight: bold;
+	font-size: 1.2em;
+	color:black;
+}
+
 ul{
 	
 	margin-top:15px;
 	margin-bottom:15px;
 	margin-right:15px;
 	margin-left:5px;
-	text-align:left;
+	text-align:left !important;
 }
 
 .emargeur{

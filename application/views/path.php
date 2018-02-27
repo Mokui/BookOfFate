@@ -14,26 +14,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</h1>
 
 		<div class="emargeur">
-		<div class="encadrer">
-			<img alt="Theme" src="http://i62.servimg.com/u/f62/11/12/11/11/territ15.jpg" />
-		</div>
-		<div class="encadrer feuille">
-		<div class="blokthat">
-				<p>Feuille de personnage:</p>
-			</div>
 			<div class="encadrer">
-				<ul>
-					<li>Vie: 20</li>
-					<li>Force : 15</li>
-					<li>Dexterité : 12</li>
-					<li>Intelligence : 13</li>
-					<li>Perception : 9</li>
-					<li>Resistance physique : 5</li>
-					<li>Resistance magique : 2</li>
-					<li>Resistance saignement :	3</li>
-				</ul>
+				<img alt="Theme" src="http://i62.servimg.com/u/f62/11/12/11/11/territ15.jpg" />
 			</div>
-		</div>
+			<div class="encadrer feuille">
+				<div class="blokthat">
+					<p>Feuille de personnage:</p>
+				</div>
+				<div class="encadrer">
+					<ul>
+						<li>Vie: 20</li>
+						<li>Force : 15</li>
+						<li>Dexterité : 12</li>
+						<li>Intelligence : 13</li>
+						<li>Perception : 9</li>
+						<li>Resistance physique : 5</li>
+						<li>Resistance magique : 2</li>
+						<li>Resistance saignement :	3</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 
 		<div id="body">
@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</ul>
 		</div>
 
-		<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+		<p class="footer">Vitesse de chargement <strong>{elapsed_time}</strong> secondes.</p>
 	</div>
 </body>
 </html>
