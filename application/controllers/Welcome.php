@@ -10,25 +10,7 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		// $this->load->view('path');
 		$this->changePage('path');
-
-		// $query = $this->db->query('SELECT * FROM g1_bookoffate.Individu');
-
-		// foreach ($query->result() as $row)
-		// {
-		// 		echo "<br> ==================== </br>";
-		// 		echo $row->type;
-		// 		echo "<br> ---- </br> Nom: ";
-		// 		echo $row->name;
-		// 		echo "<br> Niveau: ";
-		// 		echo $row->level;
-		// 		echo "<br> Vie: ";
-		// 		echo $row->life;
-		// 		echo "<br>";
-		// }
-
-		// echo 'Total Results: ' . $query->num_rows();
 	}
 
 	public function changePage($page = 'path', $numPath=1)
@@ -39,8 +21,10 @@ class Welcome extends CI_Controller {
             show_404();
 		}
 		
-		
+		//Requête qui recupère le chemin courant
 		$query = $this->db->query('SELECT * FROM g1_bookoffate.Path where idPath='.$numPath);
+		
+		//Requête qui récupère les id des chemins suivant le chemin courant
 		$queryNext = $this->db->query('SELECT NextPath.idNextPath FROM g1_bookoffate.NextPath where idPath='.$numPath);
 		$data = array();
 		
@@ -54,28 +38,26 @@ class Welcome extends CI_Controller {
 			$data['checkvalue'] = $row->checkValue;
 		}
 
+		//On rempli le tableau avec des id des chemins suivants
 		$tabNextPath = [];
 		foreach ($queryNext->result() as $row) {
 			array_push($tabNextPath,$row->idNextPath);
 		}
 
-		//DYNAMIC
+		//IT'S DYNAMIC!
+		//Création des queries permettant d'obtenir les chemins suivants
 		for ($i=0; $i < count($tabNextPath); $i++) { 
 			${"queryChoice" . $i} = $this->db->query('SELECT * FROM g1_bookoffate.Path where idPath='.$tabNextPath[$i]);
-			// foreach (${"queryChoice".$i}->result() as $row)
-			// {
-			// 	$res = "nextPath".$i;
-			// 	$data[$res] = $row->descriptionPath;
-			// }
-		}
-		//NOT DYNAMIC
-		foreach ($queryChoice0->result() as $row)
-		{
-			$data["nextPath1"] = $row->descriptionPath;
-		}
-		foreach ($queryChoice1->result() as $row)
-		{
-			$data["nextPath2"] = $row->descriptionPath;
+
+			if(isset(${"queryChoice" . $i}))
+			{
+				$myq = ${"queryChoice" . $i};
+				foreach ($myq->result() as $row)
+				{
+					$res = "nextPath".$i;
+					$data[$res] = $row->descriptionPath;
+				}
+			}
 		}
 		$this->load->view($page, $data);
 	}
