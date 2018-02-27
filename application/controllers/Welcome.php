@@ -54,10 +54,29 @@ class Welcome extends CI_Controller {
 			$data['checkvalue'] = $row->checkValue;
 		}
 
-		// foreach ($query->result() as $row) {
-		// 	$data['idNextPath'] = $row->idNextPath;
-		// }
+		$tabNextPath = [];
+		foreach ($queryNext->result() as $row) {
+			array_push($tabNextPath,$row->idNextPath);
+		}
 
+		//DYNAMIC
+		for ($i=0; $i < count($tabNextPath); $i++) { 
+			${"queryChoice" . $i} = $this->db->query('SELECT * FROM g1_bookoffate.Path where idPath='.$tabNextPath[$i]);
+			// foreach (${"queryChoice".$i}->result() as $row)
+			// {
+			// 	$res = "nextPath".$i;
+			// 	$data[$res] = $row->descriptionPath;
+			// }
+		}
+		//NOT DYNAMIC
+		foreach ($queryChoice0->result() as $row)
+		{
+			$data["nextPath1"] = $row->descriptionPath;
+		}
+		foreach ($queryChoice1->result() as $row)
+		{
+			$data["nextPath2"] = $row->descriptionPath;
+		}
 		$this->load->view($page, $data);
 	}
 }

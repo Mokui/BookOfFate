@@ -37,11 +37,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<div id="body">
-			<p><?php echo $descrip ?></p>
+		<p><?php echo $descrip ?></p>
 			<ul class="emargeur">
-				<!-- <li><?php echo $idNextPath1 ?></li> -->
-				<li>Choix 2</li>
-				<li>Choix 3</li>
+				<li><?php echo $nextPath1 ?></li>
+				<li><?php echo $nextPath2 ?></li>
 			</ul>
 		</div>
 
