@@ -21,19 +21,22 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->database();
-		$this->load->view('home');
+		$this->load->view('path');
 
 		$query = $this->db->query('SELECT * FROM g1_bookoffate.Individu');
 
-		foreach ($query->result() as $row)
-		{
-				echo "<br> ==================== <br>";
-				echo $row->type;
-				echo "<br>";
-				echo $row->name;
-				echo "<br>";
-				echo $row->level;
-		}
+		// foreach ($query->result() as $row)
+		// {
+		// 		echo "<br> ==================== </br>";
+		// 		echo $row->type;
+		// 		echo "<br> ---- </br> Nom: ";
+		// 		echo $row->name;
+		// 		echo "<br> Niveau: ";
+		// 		echo $row->level;
+		// 		echo "<br> Vie: ";
+		// 		echo $row->life;
+		// 		echo "<br>";
+		// }
 
 		echo 'Total Results: ' . $query->num_rows();
 	}
