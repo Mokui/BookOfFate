@@ -43,10 +43,12 @@ class Welcome extends CI_Controller {
 		foreach ($queryNext->result() as $row) {
 			array_push($tabNextPath,$row->idNextPath);
 		}
-
+		
 		//IT'S DYNAMIC!
 		//Création des queries permettant d'obtenir les chemins suivants
 		for ($i=0; $i < count($tabNextPath); $i++) { 
+			$idData = "tab" . $i;
+			$data[$idData] = $tabNextPath[$i];
 			${"queryChoice" . $i} = $this->db->query('SELECT * FROM g1_bookoffate.Path where idPath='.$tabNextPath[$i]);
 
 			if(isset(${"queryChoice" . $i}))

@@ -37,17 +37,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<div id="body">
-		<p><?php echo $descrip ?></p>
+		<p><?php echo $descrip?></p>
 			<ul class="emargeur">
 				<?php
 					if(isset($nextPath0)) {
-						?><li><?php echo $nextPath0; ?></li><?php
+						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/"> <?php echo $nextPath0; ?> </a></li><?php
 					} 
 					if(isset($nextPath1)) {
-						?><li><?php echo $nextPath1; ?></li><?php
+						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/<?php $tab1 ?>"> <?php echo $nextPath1; ?> </a></li><?php
 					}
 					if(isset($nextPath2)) {
-						?><li><?php echo $nextPath2; ?></li><?php
+						?><li><a href="<?php echo base_url(); ?>/index.php/Welcome/changePage/<?php $tab2 ?>"> <?php echo $nextPath2; ?> </a></li><?php
 					}
 				?>
 			</ul>
