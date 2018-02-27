@@ -11,35 +11,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- BOOTSTRAP -->
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+		<!-- CSS PERSO -->
+		<link rel="stylesheet" type="text/css" href="assets/css/choix_scenario.css" />
 </head>
 <body>
-	<div class="row">
-		<div class="col-md-6">
-			<h2>Choisissez votre scénario</h2>
+	<div id="container">
+		<h1>Choisissez votre scénario</h1>
+		<div id="body">
+			<div class="row">
+				<div class="col-md-6">
 
-			<div id="liste-scenario">
-				<ul>
-					<li value="1">Un scénario très bien</li>
-					<li value="2">L'histoire d'un scénario pas ouf</li>
-					<li value="3">Les aventures de Tom et Yanis</li>
-					<li value="4">Scénario vide et inutile</li>
-				</ul>
+					<div id="liste-scenario">
+						<ul>
+							Chargement en cours ...
+						</ul>
+					</div>
+
+					<div id="form-pseudo">
+						<!--<form action='index.php/Controller_Choix_Scenario/charger_page_scenario' method="POST">-->
+						<form method="POST">
+							<input type="text" name="pseudo" placeholder="Votre pseudo">
+							<input type="submit" value="Valider">
+						</form>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div id="image-scenario"></div>
+					<div id="description-scenario"></div>
+				</div>
 			</div>
-
-			<div id="input-pseudo">
-				<form>
-					<input type="text" placeholder="Votre pseudo">
-					<button type="button" >Valider</button>
-				</form>
-			</div>
-		</div>
-
-		<div class="col-md-6">
-			<div id="image-scenario"></div>
-			<div id="description-scenario"></div>
 		</div>
 	</div>
-
 	<script src="<?php echo base_url('assets/js/choix_scenario.js');?>"></script>
 	<script type="text/javascript">
 	    var baseurl = "<?php echo base_url(); ?>";

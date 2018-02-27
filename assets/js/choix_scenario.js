@@ -1,12 +1,6 @@
 $(function()
 {
   charger_liste_scenario();
-
-  $("#liste-scenario li").click(function()
-  {
-    console.log($(this).attr("value"));
-    /**/
-  });
 })
 
 function charger_liste_scenario()

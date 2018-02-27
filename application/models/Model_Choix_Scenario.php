@@ -5,14 +5,14 @@
     public function charger_liste_scenario()
     {
       $liste = $this->db->query('SELECT idScenario, nomScenario FROM g1_bookoffate.Scenario');
-      return $liste;
+      return $liste->result();
     }
 
     public function charger_details_scenario($id)
     {
       $sql = 'SELECT * FROM g1_bookoffate.Scenario WHERE idScenario = ?';
       $details = $this->db->query($sql, array($id));
-      return $details;
+      return $details->row();
     }
   }
 
