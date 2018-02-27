@@ -37,31 +37,31 @@ ou [Wamp] (http://www.wampserver.com/en/download-wampserver-64bits/)  (en local)
 
 Pour pouvoir jouer à ce jeu vous devez tout d'abord :
 
-##### Pour les utilisateur de Wamp :
+#### Pour les utilisateur de Wamp :
 
 
-        -Cloner ce dépot dans sa dernière version dans le dossier:
-        > C:/wamp64/www
-        ```         
-        git clone https://github.com/Mokui/BookOfFate.git
+-Cloner ce dépot dans sa dernière version dans le dossier:
+> C:/wamp64/www
+```         
+git clone https://github.com/Mokui/BookOfFate.git
 
-        ```
+```
 
 
-      Vous devez lancer Wamp puis allez dans votre navigateur et taper l'adresse "localhost" ensuite dans l'onglet Vos Projets choissisez "BookOfFate" et le jeu demarre.
-      Vous devez aussi ajouter la Base de donnée située [ici](/application/config/bofdatabase.sql).
+Vous devez lancer Wamp puis allez dans votre navigateur et taper l'adresse "localhost" ensuite dans l'onglet Vos Projets choissisez "BookOfFate" et le jeu demarre.
+Vous devez aussi ajouter la Base de donnée située [ici](/application/config/bofdatabase.sql).
 
-##### Pour les utilisateur de Xampp :
+#### Pour les utilisateur de Xampp :
 
-        -Cloner ce dépot dans sa dernière version dans le dossier :  
-        > C:/xampp/htdocs
-        ```         
-        git clone https://github.com/Mokui/BookOfFate.git
+-Cloner ce dépot dans sa dernière version dans le dossier :  
+> C:/xampp/htdocs
+```         
+git clone https://github.com/Mokui/BookOfFate.git
 
-        ```
+```
 
-        Vous devez allez sur le Xampp Control Panel. Configurer votre module Apache et MySQL puis lancer les dits modules.
-        Vous devez aussi ajouter la Base de donnée située [ici](/application/config/bofdatabase.sql)
+Vous devez allez sur le Xampp Control Panel. Configurer votre module Apache et MySQL puis lancer les dits modules.
+Vous devez aussi ajouter la Base de donnée située [ici](/application/config/bofdatabase.sql)
 
 
 ## Utilisation en production
