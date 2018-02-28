@@ -14,7 +14,7 @@ ou [Wamp](http://www.wampserver.com/en/download-wampserver-64bits/)  (en local).
 ## Utilisation en local
 
 
-Pour pouvoir jouer à ce jeu vous devez tout d'abord :
+Pour pouvoir jouer à ce jeu en local, vous devez tout d'abord :
 
 #### Pour les utilisateurs de Wamp :
 
@@ -45,6 +45,11 @@ git clone https://github.com/Mokui/BookOfFate.git
 Vous devez aller sur le Xampp Control Panel. Configurer votre module Apache et MySQL puis lancer les dits modules.
 Vous devez aussi ajouter la base de données situées [ici](/application/config/bofdatabase.sql)
 
+#### Important
+Modifiez le fichier "config.php" situé dans application/config pour que votre variable "base\_url" soit telle :
+```         
+config['base_url'] = "http://localhost/BookOfFate/";
+```
 
 ## Utilisation en production
 
